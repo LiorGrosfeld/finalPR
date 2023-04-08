@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#836382"
+    tools:context=".EnterAppPage">
+
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="303dp"
+        android:layout_height="85dp"
+        android:text="Welcome, select an option:"
+        android:textColor="#4CAF50"
+        android:textSize="55px"
+        android:fontFamily="@font/new_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/input"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        app:cornerRadius="20dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#CE9351"
+        android:fontFamily="@font/new_font"
+        android:text="Insert a game"
+        android:textSize="50px"
+        app:icon="@android:drawable/ic_menu_add"
+
+        app:iconTint="#2CDFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <Button
+        android:id="@+id/ToList"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#CE9351"
+        app:cornerRadius="20dp"
+        android:fontFamily="@font/new_font"
+        android:text="View Games"
+        android:textSize="50px"
+
+
+
+        app:icon="?android:attr/actionModeFindDrawable"
+        app:iconTint="#2CDFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <Button
+        android:id="@+id/existApp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        app:cornerRadius="20dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#CE9351"
+        android:fontFamily="@font/new_font"
+        android:text="exit webfolder"
+        android:textSize="50px"
+        app:icon="@android:drawable/ic_lock_power_off"
+        app:iconTint="#2CDFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ToList"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ToList"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <Button
+        android:id="@+id/deleteall"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="361dp"
+        android:layout_height="55dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#CE9351"
+
+        app:cornerRadius="20dp"
+        android:fontFamily="@font/new_font"
+        android:text="delete all stored games"
+        android:textSize="50px"
+        app:icon="?android:attr/alertDialogIcon"
+        app:iconTint="#2CDFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="157dp"
+        android:layout_height="118dp"
+        android:fontFamily="@font/new_font"
+        android:text="Currently 0 games stored in the Hubb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="513dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"
+        app:srcCompat="@mipmap/applogo" />
+
+    <TextView
+        android:id="@+id/appVersion"
+        android:layout_width="157dp"
+        android:layout_height="39dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        android:fontFamily="@font/new_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="63dp"
+        android:layout_height="43dp"
+        app:icon="@android:drawable/ic_menu_set_as"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#CE9351"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

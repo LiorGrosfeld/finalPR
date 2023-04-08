@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Gaming Hubb</string>
+    <string name="app_version">Gaming Hubb Version 1.0</string>
+
+    <string-array name="category">
+        <item>Without category</item>
+        <item>Education</item>
+        <item>Sports</item>
+        <item>TV</item>
+        <item>Games</item>
+        <item>Business</item>
+        <item>Weather</item>
+        <item>Government</item>
+        <item>Travel</item>
+        <item>Forums</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="empty">
+
+    </string-array>
+</resources>
